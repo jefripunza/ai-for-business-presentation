@@ -915,8 +915,8 @@ html, body, #app { width: 100%; height: 100%; overflow: hidden; font-family: 'Se
   .sawang-product-card { padding: 20px 16px; }
   .sawang-product-card h3 { font-size: 20px; }
   .sawang-product-card p { font-size: 13px; }
+  .slide-sawang-cloud .slide-content { padding-bottom: 220px; }
 }
-
 @media (max-width: 380px) {
   .swiper-slide { overflow-y: auto; align-items: flex-start; -webkit-overflow-scrolling: touch; }
   .slide-content { padding: 16px 10px 70px; }
