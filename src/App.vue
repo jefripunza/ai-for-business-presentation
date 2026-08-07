@@ -5,7 +5,7 @@ import 'swiper/swiper-bundle.css'
 
 let swiperInstance = null
 
-const totalSlides = 10
+const totalSlides = 12
 const currentSlide = ref(0)
 const swiperEl = ref(null)
 const progressPercent = ref(0)
@@ -193,7 +193,7 @@ function toggleFullscreen() {
           </div>
         </div>
 
-        <!-- ===== SLIDE 3: MASALAH NYATA ===== -->
+        <!-- ===== SLIDE 4: MASALAH NYATA ===== -->
         <div class="swiper-slide slide" style="background: linear-gradient(135deg, #0b0d17 0%, #0d1117 100%);">
           <div class="slide-content">
             <div class="anim-item" style="--i:0">
@@ -236,7 +236,49 @@ function toggleFullscreen() {
           </div>
         </div>
 
-        <!-- ===== SLIDE 4: KERANGKA BERPIKIR ===== -->
+        <!-- ===== SLIDE 5: HARGA TANPA AI ===== -->
+        <div class="swiper-slide slide" style="background: linear-gradient(135deg, #0d1117 0%, #0a0f1a 100%);">
+          <div class="slide-content center">
+            <div class="anim-item" style="--i:0">
+              <div class="section-label">OPPORTUNITY COST</div>
+              <h2 class="slide-title">Harga yang Anda Bayar<br><span class="text-gradient">Tanpa AI</span></h2>
+            </div>
+            <div class="anim-item" style="--i:1">
+              <p class="slide-desc" style="max-width: 650px; margin: 10px auto 30px;">
+                Setiap hari Anda menunda adopsi AI, ini yang sebenarnya terjadi di bisnis Anda:
+              </p>
+            </div>
+            <div class="cost-grid">
+              <div class="anim-item cost-card cost-red" style="--i:2">
+                <div class="cost-num">40%</div>
+                <div class="cost-label">Waktu Terbuang</div>
+                <p>Rata-rata waktu CS/Admin habis untuk tugas repetitif yang seharusnya bisa diotomatisasi.</p>
+              </div>
+              <div class="anim-item cost-card cost-orange" style="--i:3">
+                <div class="cost-num">24 Jam</div>
+                <div class="cost-label">Response Gap</div>
+                <p>Customer menunggu balasan sementara kompetitor yang pakai AI merespon dalam hitungan detik.</p>
+              </div>
+              <div class="anim-item cost-card cost-yellow" style="--i:4">
+                <div class="cost-num">3–6 Bulan</div>
+                <div class="cost-label">Time-to-Market</div>
+                <p>Website, campaign, integrasi — yang dengan AI bisa selesai dalam hitungan hari.</p>
+              </div>
+              <div class="anim-item cost-card cost-blue" style="--i:5">
+                <div class="cost-num">Rp 0</div>
+                <div class="cost-label">Biaya Mulai</div>
+                <p>Ironisnya: memulai AI lebih murah daripada biaya opportunity cost yang Anda tanggung sekarang.</p>
+              </div>
+            </div>
+            <div class="anim-item" style="--i:6; margin-top: 24px;">
+              <div class="principle-box" style="max-width: 700px;">
+                💡 <span><strong>Kesimpulan:</strong> Bukan soal "mampu atau tidak". Tapi soal "seberapa lama Anda rela rugi".</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== SLIDE 6: KERANGKA BERPIKIR ===== -->
         <div class="swiper-slide slide" style="background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);">
           <div class="slide-content center">
             <div class="anim-item" style="--i:0">
@@ -281,7 +323,7 @@ function toggleFullscreen() {
           </div>
         </div>
 
-        <!-- ===== SLIDE 5: GONG — OPENCLAW ===== -->
+        <!-- ===== SLIDE 7: GONG — OPENCLAW ===== -->
         <div class="swiper-slide slide" style="background: linear-gradient(135deg, #0d1117 0%, #0b0d17 50%, #0d1117 100%);">
           <div class="slide-content center">
             <div class="anim-item" style="--i:0">
@@ -311,7 +353,7 @@ function toggleFullscreen() {
           </div>
         </div>
 
-        <!-- ===== SLIDE 6: SAWANG CLOUD ===== -->
+        <!-- ===== SLIDE 8: SAWANG CLOUD ===== -->
         <div class="swiper-slide slide" style="background: linear-gradient(135deg, #0a1628 0%, #0d1117 50%, #0a1628 100%);">
           <div class="slide-content center">
             <div class="anim-item" style="--i:0">
@@ -352,7 +394,44 @@ function toggleFullscreen() {
           </div>
         </div>
 
-        <!-- ===== SLIDE 7: STUDI KASUS LIVE ===== -->
+        <!-- ===== SLIDE 9: MANA YANG COCOK? ===== -->
+        <div class="swiper-slide slide" style="background: linear-gradient(135deg, #0d1117 0%, #0b0d17 100%);">
+          <div class="slide-content">
+            <div class="anim-item" style="--i:0">
+              <div class="section-label">POSITIONING</div>
+              <h2 class="slide-title">Mana yang Cocok<br><span class="text-gradient">untuk Bisnis Anda?</span></h2>
+            </div>
+            <div class="anim-item" style="--i:1; margin-top: 24px;">
+              <div class="positioning-table">
+                <div class="pos-row anim-item" style="--i:2">
+                  <div class="pos-icon-col">🦞</div>
+                  <div class="pos-name-col"><strong>OpenClaw</strong><span>AI Agent Gateway</span></div>
+                  <div class="pos-who-col"><strong>Cocok untuk:</strong> Bisnis yang ingin punya AI agent sendiri — handle chat, website, data processing tanpa developer tambahan.</div>
+                  <div class="pos-use-col">📌 Chat CS, Website Builder, Data Agent</div>
+                </div>
+                <div class="pos-row anim-item" style="--i:3">
+                  <div class="pos-icon-col">⚡</div>
+                  <div class="pos-name-col"><strong>N8N</strong><span>Workflow Automation</span></div>
+                  <div class="pos-who-col"><strong>Cocok untuk:</strong> Bisnis yang ingin otomatisasi proses — dari form → AI → notifikasi → database tanpa koding.</div>
+                  <div class="pos-use-col">📌 Form → PDF, WhatsApp blast, Inventory sync</div>
+                </div>
+                <div class="pos-row anim-item" style="--i:4">
+                  <div class="pos-icon-col">🧠</div>
+                  <div class="pos-name-col"><strong>9Router</strong><span>AI Model Router</span></div>
+                  <div class="pos-who-col"><strong>Cocok untuk:</strong> Bisnis yang sudah pakai multiple AI API — hemat biaya, satu endpoint untuk semua model.</div>
+                  <div class="pos-use-col">📌 OpenAI, Claude, Gemini, Llama — satu gateway</div>
+                </div>
+              </div>
+            </div>
+            <div class="anim-item" style="--i:5; margin-top: 20px;">
+              <div class="principle-box" style="max-width: 700px;">
+                🎯 <span><strong>Pro tip:</strong> Mulai dari OpenClaw. Tambah N8N saat workflow makin kompleks. 9Router saat API cost mulai membengkak.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== SLIDE 10: STUDI KASUS LIVE ===== -->
         <div class="swiper-slide slide" style="background: radial-gradient(ellipse at 30% 50%, #0a1628 0%, #0d1117 70%);">
           <div class="slide-content">
             <div class="anim-item" style="--i:0">
@@ -399,7 +478,7 @@ function toggleFullscreen() {
           </div>
         </div>
 
-        <!-- ===== SLIDE 7: CARA MULAI ===== -->
+        <!-- ===== SLIDE 11: CARA MULAI ===== -->
         <div class="swiper-slide slide" style="background: linear-gradient(135deg, #161b22 0%, #0d1117 100%);">
           <div class="slide-content">
             <div class="anim-item" style="--i:0">
@@ -442,7 +521,7 @@ function toggleFullscreen() {
           </div>
         </div>
 
-        <!-- ===== SLIDE 9: CLOSING ===== -->
+        <!-- ===== SLIDE 12: CLOSING ===== -->
         <div class="swiper-slide slide slide-center" style="background: radial-gradient(ellipse at 50% 50%, #1a1a3e 0%, #0d1117 70%);">
           <div class="slide-content center hero-layout">
             <div class="anim-item" style="--i:0">
@@ -568,6 +647,33 @@ html, body, #app { width: 100%; height: 100%; overflow: hidden; font-family: 'Se
 .flow-arrow { font-size: 32px; color: #484f58; padding: 18px 6px; }
 .principle-box { display: flex; gap: 14px; align-items: flex-start; padding: 18px 24px; border-radius: 14px; background: rgba(88,166,255,0.05); border: 1px solid rgba(88,166,255,0.15); font-size: 16px; color: #c9d1d9; line-height: 1.5; max-width: 700px; }
 .principle-icon { font-size: 28px; flex-shrink: 0; }
+
+/* === NEW SLIDE: HARGA TANPA AI === */
+.cost-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; max-width: 1000px; }
+.cost-card { padding: 24px 18px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.06); background: rgba(255,255,255,0.02); text-align: center; transition: all 0.35s; }
+.cost-card:hover { transform: translateY(-4px); }
+.cost-red:hover { border-color: rgba(255,123,114,0.4); background: rgba(255,123,114,0.06); }
+.cost-orange:hover { border-color: rgba(255,184,112,0.4); background: rgba(255,184,112,0.06); }
+.cost-yellow:hover { border-color: rgba(210,168,255,0.4); background: rgba(210,168,255,0.06); }
+.cost-blue:hover { border-color: rgba(88,166,255,0.4); background: rgba(88,166,255,0.06); }
+.cost-num { font-size: clamp(32px, 5vw, 48px); font-weight: 800; margin-bottom: 4px; letter-spacing: -0.02em; }
+.cost-red .cost-num { color: #ff7b72; }
+.cost-orange .cost-num { color: #ffb870; }
+.cost-yellow .cost-num { color: #d2a8ff; }
+.cost-blue .cost-num { color: #58a6ff; }
+.cost-label { font-size: 14px; font-weight: 700; color: #f0f6fc; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+.cost-card p { font-size: 13px; color: #8b949e; line-height: 1.5; }
+
+/* === NEW SLIDE: MANA YANG COCOK === */
+.positioning-table { display: flex; flex-direction: column; gap: 10px; max-width: 850px; }
+.pos-row { display: grid; grid-template-columns: 48px 140px 1fr 180px; gap: 14px; align-items: center; padding: 16px 20px; border-radius: 12px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); transition: all 0.25s; }
+.pos-row:hover { border-color: rgba(88,166,255,0.2); background: rgba(88,166,255,0.03); }
+.pos-icon-col { font-size: 30px; text-align: center; }
+.pos-name-col { display: flex; flex-direction: column; }
+.pos-name-col strong { color: #f0f6fc; font-size: 16px; }
+.pos-name-col span { font-size: 11px; color: #8b949e; text-transform: uppercase; letter-spacing: 0.4px; }
+.pos-who-col { font-size: 13px; color: #c9d1d9; line-height: 1.5; }
+.pos-use-col { font-size: 12px; color: #58a6ff; font-weight: 600; }
 
 /* Intro / Perkenalan */
 .intro-photo-wrap {
@@ -755,6 +861,11 @@ html, body, #app { width: 100%; height: 100%; overflow: hidden; font-family: 'Se
   .flow-arrow { font-size: 24px; padding: 14px 4px; }
   .gong-card { flex: 1; min-width: 180px; padding: 22px 18px; }
   .gong-icon { font-size: 34px; }
+  .cost-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .cost-card { padding: 18px 14px; }
+  .cost-num { font-size: 36px; }
+  .pos-row { grid-template-columns: 38px 100px 1fr; gap: 10px; padding: 14px 16px; }
+  .pos-use-col { display: none; }
   .nav-bar { height: 52px; padding: 0 12px; }
   .nav-center { gap: 8px; }
   .nav-btn-v2 { width: 36px; height: 36px; }
@@ -795,6 +906,9 @@ html, body, #app { width: 100%; height: 100%; overflow: hidden; font-family: 'Se
   .nav-btn-v2 { width: 32px; height: 32px; }
   .nav-btn-v2 svg { width: 14px; height: 14px; }
   .cta-link { font-size: 15px; padding: 10px 14px; }
+  .cost-grid { grid-template-columns: 1fr; gap: 10px; }
+  .pos-row { grid-template-columns: 38px 1fr; gap: 8px; padding: 12px; }
+  .pos-who-col { grid-column: 2; }
 }
 
 @media (max-width: 380px) {
