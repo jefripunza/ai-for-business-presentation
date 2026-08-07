@@ -761,7 +761,8 @@ html, body, #app { width: 100%; height: 100%; overflow: hidden; font-family: 'Se
 }
 
 @media (max-width: 640px) {
-  .slide-content { padding: 24px 16px; }
+  .swiper-slide { overflow-y: auto; align-items: flex-start; -webkit-overflow-scrolling: touch; }
+  .slide-content { padding: 24px 16px 80px; }
   .hero-layout { max-width: 100%; }
   .hero-emoji { font-size: 60px; margin-bottom: 0; }
   .hero-title { font-size: 28px; }
@@ -793,7 +794,8 @@ html, body, #app { width: 100%; height: 100%; overflow: hidden; font-family: 'Se
 }
 
 @media (max-width: 380px) {
-  .slide-content { padding: 16px 10px; }
+  .swiper-slide { overflow-y: auto; align-items: flex-start; -webkit-overflow-scrolling: touch; }
+  .slide-content { padding: 16px 10px 70px; }
   .hero-emoji { font-size: 44px; }
   .hero-title { font-size: 22px; }
   .hero-subtitle { font-size: 13px; }
