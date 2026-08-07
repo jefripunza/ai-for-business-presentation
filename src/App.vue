@@ -127,9 +127,6 @@ function toggleFullscreen() {
                 <p style="font-size: 15px; color: #8b949e; text-align: center; margin-top: 6px;">
                   <strong style="color: #e6edf3;">Principal Software Engineer</strong><br>CEO Sawang Tech
                 </p>
-                <div class="intro-skills" style="margin-top: 12px;">
-                  <span class="skill-tag">AI/ML</span><span class="skill-tag">Docker</span><span class="skill-tag">CI/CD</span><span class="skill-tag">Coolify</span><span class="skill-tag">Cloud</span><span class="skill-tag">Cyber Security</span><span class="skill-tag">Vue/Node</span><span class="skill-tag">Python</span>
-                </div>
               </div>
               <!-- RIGHT: experience -->
               <div class="anim-item intro-right" style="--i:1">
@@ -148,6 +145,8 @@ function toggleFullscreen() {
                     <span class="exp-date">🎓 2015 — 2019</span><strong>S.T. Teknik Sipil</strong> · Universitas Jambi
                     <div class="exp-sub">📜 C.Me — Mediator · Universitas Gadjah Mada (2024)</div>
                   </div>
+                  <div class="exp-item"><span class="exp-date">2020 — 2021</span><strong>Direktur</strong> · PT Rakatama Cipta Semesta<div class="exp-sub">Jambi</div></div>
+                  <div class="exp-item"><span class="exp-date">2019 — 2020</span><strong>Programmer</strong> · BMKG Muaro Jambi<div class="exp-sub">Jambi · Onsite</div></div>
                 </div>
               </div>
             </div>
@@ -872,9 +871,9 @@ html, body, #app { width: 100%; height: 100%; overflow: hidden; font-family: 'Se
 }
 
 @media (max-width: 640px) {
-  .swiper-slide { overflow-y: auto; -webkit-overflow-scrolling: touch; }
-  .swiper-slide.slide-center { align-items: center; justify-content: center; }
-  .slide-content { padding: 24px 16px 80px; }
+  .swiper-slide { overflow-y: auto; align-items: flex-start; -webkit-overflow-scrolling: touch; }
+  .swiper-slide.slide-center { align-items: center; justify-content: center; overflow-y: hidden; }
+  .slide-content { padding: 40px 16px 120px; }
   .hero-layout { max-width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; min-height: 100%; }
   .hero-layout .swiper-slide { align-items: center; justify-content: center; }
   .typewriter-text { white-space: normal !important; word-break: break-word; text-align: center; }
