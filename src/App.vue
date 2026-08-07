@@ -431,7 +431,7 @@ function toggleFullscreen() {
         </div>
 
         <!-- ===== SLIDE 10: STUDI KASUS LIVE ===== -->
-        <div class="swiper-slide slide" style="background: radial-gradient(ellipse at 30% 50%, #0a1628 0%, #0d1117 70%);">
+        <div class="swiper-slide slide slide-demo" style="background: radial-gradient(ellipse at 30% 50%, #0a1628 0%, #0d1117 70%);">
           <div class="slide-content">
             <div class="anim-item" style="--i:0">
               <div class="section-label">LIVE DEMO</div>
@@ -865,6 +865,7 @@ html, body, #app { width: 100%; height: 100%; overflow: hidden; font-family: 'Se
   .cost-num { font-size: 36px; }
   .pos-row { grid-template-columns: 38px 100px 1fr; gap: 10px; padding: 14px 16px; }
   .pos-use-col { display: none; }
+  .slide-demo .slide-content { padding-bottom: 140px; }
   .nav-bar { height: 52px; padding: 0 12px; }
   .nav-center { gap: 8px; }
   .nav-btn-v2 { width: 36px; height: 36px; }
@@ -908,6 +909,7 @@ html, body, #app { width: 100%; height: 100%; overflow: hidden; font-family: 'Se
   .cost-grid { grid-template-columns: 1fr; gap: 10px; }
   .pos-row { grid-template-columns: 38px 1fr; gap: 8px; padding: 12px; }
   .pos-who-col { grid-column: 2; }
+  .slide-demo .slide-content { padding-bottom: 160px; }
 }
 
 @media (max-width: 380px) {
