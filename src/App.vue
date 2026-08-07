@@ -135,7 +135,7 @@ function toggleFullscreen() {
               <div class="anim-item intro-right" style="--i:1">
                 <h3 style="font-size: 18px; color: #58a6ff; margin-bottom: 10px;">Experience</h3>
                 <div class="exp-list" style="font-size: 12px;">
-                  <div class="exp-item"><span class="exp-date">09/2024 — Present</span><strong>Tech Lead</strong> · RemoteWorker.ID<div class="exp-sub">Yogyakarta · Remote</div></div>
+                  <div class="exp-item"><span class="exp-date">09/2024 — Present</span><strong>CEO</strong> · Sawang Teknologi Indonesia<div class="exp-sub">Yogyakarta</div></div>
                   <div class="exp-item"><span class="exp-date">11/2023 — 09/2024</span><strong>Principal Engineer</strong> · PT. Cloufina Nata Karya<div class="exp-sub">Yogyakarta · Onsite</div></div>
                   <div class="exp-item"><span class="exp-date">09/2023 — 11/2023</span><strong>Software Engineer</strong> · Vestis Labs S.A.R.L<div class="exp-sub">Luxembourg · Remote</div></div>
                   <div class="exp-item"><span class="exp-date">08/2023 — 11/2023</span><strong>Python Developer</strong> · PT. Cloufina Nata Karya<div class="exp-sub">Yogyakarta · Remote</div></div>
