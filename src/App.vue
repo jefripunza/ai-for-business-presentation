@@ -860,6 +860,7 @@ html, body, #app { width: 100%; height: 100%; overflow: hidden; font-family: 'Se
   .flow-arrow { font-size: 24px; padding: 14px 4px; }
   .gong-card { flex: 1; min-width: 180px; padding: 22px 18px; }
   .gong-icon { font-size: 34px; }
+  .sawang-grid-v2 { gap: 14px; }
   .cost-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .cost-card { padding: 18px 14px; }
   .cost-num { font-size: 36px; }
@@ -910,6 +911,10 @@ html, body, #app { width: 100%; height: 100%; overflow: hidden; font-family: 'Se
   .pos-row { grid-template-columns: 38px 1fr; gap: 8px; padding: 12px; }
   .pos-who-col { grid-column: 2; }
   .slide-demo .slide-content { padding-bottom: 160px; }
+  .sawang-grid-v2 { grid-template-columns: 1fr; gap: 12px; }
+  .sawang-product-card { padding: 20px 16px; }
+  .sawang-product-card h3 { font-size: 20px; }
+  .sawang-product-card p { font-size: 13px; }
 }
 
 @media (max-width: 380px) {
@@ -922,5 +927,6 @@ html, body, #app { width: 100%; height: 100%; overflow: hidden; font-family: 'Se
   .nav-bar { padding: 0 4px; }
   .nav-btn-v2 { width: 28px; height: 28px; }
   .nav-center { gap: 4px; }
+  .sawang-grid-v2 { grid-template-columns: 1fr; gap: 10px; }
 }
 </style>
