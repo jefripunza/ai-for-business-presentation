@@ -111,31 +111,30 @@ function toggleFullscreen() {
 
         <!-- ===== SLIDE 2: PERKENALAN ===== -->
         <div class="swiper-slide slide" style="background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #0d1117 100%);">
-          <div class="slide-content center">
-            <div class="anim-item" style="--i:0">
-              <div class="intro-photo-wrap">
-                <img src="/jefri.jpg" alt="Jefri Herdi Triyanto" class="intro-photo" />
+          <div class="slide-content" style="max-width: 900px;">
+            <div class="intro-two-col">
+              <!-- LEFT: photo + identity -->
+              <div class="anim-item intro-left" style="--i:0">
+                <div class="intro-photo-wrap">
+                  <img src="/jefri.jpg" alt="Jefri Herdi Triyanto" class="intro-photo" />
+                </div>
+                <h2 class="slide-title" style="margin-top: 14px; text-align: center;">Jefri Herdi Triyanto, S.T., C.Me</h2>
+                <p style="font-size: 15px; color: #8b949e; text-align: center; margin-top: 6px;">
+                  <strong style="color: #e6edf3;">Principal Software Engineer</strong><br>CEO Sawang Tech
+                </p>
+                <div class="intro-skills" style="margin-top: 12px;">
+                  <span class="skill-tag">AI/ML</span><span class="skill-tag">Docker</span><span class="skill-tag">CI/CD</span><span class="skill-tag">Coolify</span><span class="skill-tag">Cloud</span><span class="skill-tag">Cyber Security</span><span class="skill-tag">Vue/Node</span><span class="skill-tag">Python</span>
+                </div>
               </div>
-            </div>
-            <div class="anim-item" style="--i:1">
-              <h2 class="slide-title" style="margin-top: 16px;">Jefri Herdi Triyanto, S.T., C.Me</h2>
-            </div>
-            <div class="anim-item" style="--i:2">
-              <p style="font-size: 18px; color: #8b949e; max-width: 600px; text-align: center; line-height: 1.6;">
-                <strong style="color: #e6edf3;">Principal Software Engineer</strong> — 7+ tahun di software development, project management & cross-functional leadership.
-              </p>
-            </div>
-            <div class="anim-item" style="--i:3">
-              <div class="intro-badges">
-                <span class="intro-badge">🏢 CEO Sawang Tech</span>
-                <span class="intro-badge">💼 Ex-Tech Lead RemoteWorker.ID</span>
-                <span class="intro-badge">🎓 S.T. Teknik Informatika</span>
-                <span class="intro-badge">📜 C.Me — Certified</span>
-              </div>
-            </div>
-            <div class="anim-item" style="--i:4">
-              <div class="intro-skills">
-                <span class="skill-tag">AI/ML</span><span class="skill-tag">Docker</span><span class="skill-tag">CI/CD</span><span class="skill-tag">Coolify</span><span class="skill-tag">Cloud</span><span class="skill-tag">Cyber Security</span><span class="skill-tag">Vue/Node</span><span class="skill-tag">Python</span>
+              <!-- RIGHT: experience -->
+              <div class="anim-item intro-right" style="--i:1">
+                <h3 style="font-size: 18px; color: #58a6ff; margin-bottom: 14px;">Pengalaman</h3>
+                <div class="exp-list">
+                  <div class="exp-item">🏢 <strong>CEO</strong> — Sawang Tech<div class="exp-sub">Infrastruktur digital & AI agent untuk bisnis Indonesia</div></div>
+                  <div class="exp-item">🏗️ <strong>Principal Engineer</strong><div class="exp-sub">Arsitektur sistem, automasi deployment, self-hosted stack</div></div>
+                  <div class="exp-item">💻 <strong>Software Engineer</strong><div class="exp-sub">Full-stack development — Vue, Node, Python, Docker</div></div>
+                  <div class="exp-item">🎓 <strong>S.T. Teknik Informatika</strong><div class="exp-sub">📜 C.Me — Certified</div></div>
+                </div>
               </div>
             </div>
           </div>
@@ -345,48 +344,7 @@ function toggleFullscreen() {
           </div>
         </div>
 
-        <!-- ===== SLIDE 7: SAWANG CLOUD ===== -->
-        <div class="swiper-slide slide" style="background: linear-gradient(135deg, #0a1628 0%, #0d1117 50%, #0a1628 100%);">
-          <div class="slide-content center">
-            <div class="anim-item" style="--i:0">
-              <div class="section-label">PRODUCT SHOWCASE</div>
-              <h2 class="slide-title">Perkenalkan <span class="text-gradient">Sawang Cloud</span></h2>
-            </div>
-            <div class="anim-item" style="--i:1">
-              <p class="slide-desc" style="max-width: 650px; margin: 12px auto 28px;">
-                Platform infrastruktur digital berbasis AI — tiga produk inti untuk mengakselerasi bisnis Anda.
-              </p>
-            </div>
-            <div class="sawang-grid-v2">
-              <div class="anim-item sawang-product-card" style="--i:2">
-                <div class="sp-icon">🦞</div>
-                <div class="sp-badge">AI Agent Gateway</div>
-                <h3>OpenClaw</h3>
-                <p>Bangun & deploy AI agent dari chat. Multi-channel: Telegram, WhatsApp, Discord. Self-hosted, zero telemetry.</p>
-                <a class="sp-link" href="https://openclaw.ai" target="_blank">openclaw.ai →</a>
-              </div>
-              <div class="anim-item sawang-product-card" style="--i:3">
-                <div class="sp-icon">⚡</div>
-                <div class="sp-badge">Workflow Automation</div>
-                <h3>N8N</h3>
-                <p>Otomatisasi workflow visual. Integrasikan 400+ layanan. Dari form → AI → database → notifikasi, semua otomatis.</p>
-                <a class="sp-link" href="https://n8n.io" target="_blank">n8n.io →</a>
-              </div>
-              <div class="anim-item sawang-product-card" style="--i:4">
-                <div class="sp-icon">🧠</div>
-                <div class="sp-badge">AI Model Router</div>
-                <h3>9Router</h3>
-                <p>Satu API endpoint untuk semua model AI. Auto-failover, load balancing, cost optimization. OpenAI, Claude, Gemini, Llama — satu gateway.</p>
-                <a class="sp-link" href="https://ai.jefripunza.com" target="_blank">ai.jefripunza.com →</a>
-              </div>
-            </div>
-            <div class="anim-item" style="--i:5; margin-top: 22px;">
-              <a class="cta-link" href="https://sawang.cloud" target="_blank">🌐 sawang.cloud</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- ===== SLIDE 8: CARA MULAI ===== -->
+        <!-- ===== SLIDE 7: CARA MULAI ===== -->
         <div class="swiper-slide slide" style="background: linear-gradient(135deg, #161b22 0%, #0d1117 100%);">
           <div class="slide-content">
             <div class="anim-item" style="--i:0">
@@ -425,6 +383,47 @@ function toggleFullscreen() {
                   <li>❌ Tidak mengukur hasil sebelum & sesudah</li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== SLIDE 8: SAWANG CLOUD ===== -->
+        <div class="swiper-slide slide" style="background: linear-gradient(135deg, #0a1628 0%, #0d1117 50%, #0a1628 100%);">
+          <div class="slide-content center">
+            <div class="anim-item" style="--i:0">
+              <div class="section-label">PRODUCT SHOWCASE</div>
+              <h2 class="slide-title">Perkenalkan <span class="text-gradient">Sawang Cloud</span></h2>
+            </div>
+            <div class="anim-item" style="--i:1">
+              <p class="slide-desc" style="max-width: 650px; margin: 12px auto 28px;">
+                Platform infrastruktur digital berbasis AI — tiga produk inti untuk mengakselerasi bisnis Anda.
+              </p>
+            </div>
+            <div class="sawang-grid-v2">
+              <div class="anim-item sawang-product-card" style="--i:2">
+                <div class="sp-icon">🦞</div>
+                <div class="sp-badge">AI Agent Gateway</div>
+                <h3>OpenClaw</h3>
+                <p>Bangun & deploy AI agent dari chat. Multi-channel: Telegram, WhatsApp, Discord. Self-hosted, zero telemetry.</p>
+                <a class="sp-link" href="https://openclaw.ai" target="_blank">openclaw.ai →</a>
+              </div>
+              <div class="anim-item sawang-product-card" style="--i:3">
+                <div class="sp-icon">⚡</div>
+                <div class="sp-badge">Workflow Automation</div>
+                <h3>N8N</h3>
+                <p>Otomatisasi workflow visual. Integrasikan 400+ layanan. Dari form → AI → database → notifikasi, semua otomatis.</p>
+                <a class="sp-link" href="https://n8n.io" target="_blank">n8n.io →</a>
+              </div>
+              <div class="anim-item sawang-product-card" style="--i:4">
+                <div class="sp-icon">🧠</div>
+                <div class="sp-badge">AI Model Router</div>
+                <h3>9Router</h3>
+                <p>Satu API endpoint untuk semua model AI. Auto-failover, load balancing, cost optimization. OpenAI, Claude, Gemini, Llama — satu gateway.</p>
+                <a class="sp-link" href="https://ai.jefripunza.com" target="_blank">ai.jefripunza.com →</a>
+              </div>
+            </div>
+            <div class="anim-item" style="--i:5; margin-top: 22px;">
+              <a class="cta-link" href="https://sawang.cloud" target="_blank">🌐 sawang.cloud</a>
             </div>
           </div>
         </div>
@@ -577,6 +576,16 @@ html, body, #app { width: 100%; height: 100%; overflow: hidden; font-family: 'Se
 .intro-skills { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-top: 10px; }
 .skill-tag { padding: 4px 12px; border-radius: 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); font-size: 12px; color: #8b949e; }
 
+/* Intro two-column layout */
+.intro-two-col { display: flex; gap: 40px; align-items: center; }
+.intro-left { flex: 1; display: flex; flex-direction: column; align-items: center; }
+.intro-right { flex: 1.2; }
+.exp-list { display: flex; flex-direction: column; gap: 10px; }
+.exp-item { padding: 10px 14px; border-radius: 10px; background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.06); font-size: 14px; color: #c9d1d9; transition: all 0.25s; }
+.exp-item:hover { border-color: rgba(88,166,255,0.2); background: rgba(88,166,255,0.03); }
+.exp-item strong { color: #f0f6fc; }
+.exp-sub { font-size: 12px; color: #8b949e; margin-top: 3px; }
+
 /* Case study (slide 5) */
 .case-study-grid { display: flex; flex-direction: column; gap: 18px; margin: 30px 0; max-width: 750px; }
 .case-step { display: flex; gap: 18px; align-items: flex-start; padding: 20px 24px; border-radius: 14px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); transition: all 0.3s; }
@@ -655,11 +664,11 @@ html, body, #app { width: 100%; height: 100%; overflow: hidden; font-family: 'Se
   white-space: nowrap;
   max-width: 100%;
   border-right: 2px solid #58a6ff;
-  animation: typewriter 2s steps(28, end), blink 0.8s step-end infinite;
+  animation: typewriter 2s steps(28, end) forwards, blink 0.8s step-end infinite;
 }
 .typewriter-text.typewriter-done {
   border-right-color: transparent;
-  animation: typewriter 2s steps(28, end);
+  animation: typewriter 2s steps(28, end) forwards;
 }
 .typewriter-line2 {
   font-size: clamp(16px, 2.5vw, 22px);
@@ -672,14 +681,15 @@ html, body, #app { width: 100%; height: 100%; overflow: hidden; font-family: 'Se
 .typewriter-line2.typewriter-active {
   width: auto;
   border-right-color: #58a6ff;
-  animation: typewriter 2.5s steps(32, end), blink 0.8s step-end infinite;
+  animation: typewriter 2.5s steps(32, end) forwards, blink 0.8s steps(1, end) infinite;
 }
 @keyframes typewriter {
   from { width: 0; }
   to { width: 100%; }
 }
 @keyframes blink {
-  50% { border-color: transparent; }
+  0%, 100% { border-right-color: #58a6ff; }
+  50% { border-right-color: transparent; }
 }
 
 /* Nav bar */
