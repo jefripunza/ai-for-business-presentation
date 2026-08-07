@@ -133,12 +133,21 @@ function toggleFullscreen() {
               </div>
               <!-- RIGHT: experience -->
               <div class="anim-item intro-right" style="--i:1">
-                <h3 style="font-size: 18px; color: #58a6ff; margin-bottom: 14px;">Pengalaman</h3>
-                <div class="exp-list">
-                  <div class="exp-item">🏢 <strong>CEO</strong> — Sawang Tech<div class="exp-sub">Infrastruktur digital & AI agent untuk bisnis Indonesia</div></div>
-                  <div class="exp-item">🏗️ <strong>Principal Engineer</strong><div class="exp-sub">Arsitektur sistem, automasi deployment, self-hosted stack</div></div>
-                  <div class="exp-item">💻 <strong>Software Engineer</strong><div class="exp-sub">Full-stack development — Vue, Node, Python, Docker</div></div>
-                  <div class="exp-item">🎓 <strong>S.T. Teknik Informatika</strong><div class="exp-sub">📜 C.Me — Certified</div></div>
+                <h3 style="font-size: 18px; color: #58a6ff; margin-bottom: 10px;">Experience</h3>
+                <div class="exp-list" style="font-size: 12px;">
+                  <div class="exp-item"><span class="exp-date">09/2024 — Present</span><strong>Tech Lead</strong> · RemoteWorker.ID<div class="exp-sub">Yogyakarta · Remote</div></div>
+                  <div class="exp-item"><span class="exp-date">11/2023 — 09/2024</span><strong>Principal Engineer</strong> · PT. Cloufina Nata Karya<div class="exp-sub">Yogyakarta · Onsite</div></div>
+                  <div class="exp-item"><span class="exp-date">09/2023 — 11/2023</span><strong>Software Engineer</strong> · Vestis Labs S.A.R.L<div class="exp-sub">Luxembourg · Remote</div></div>
+                  <div class="exp-item"><span class="exp-date">08/2023 — 11/2023</span><strong>Python Developer</strong> · PT. Cloufina Nata Karya<div class="exp-sub">Yogyakarta · Remote</div></div>
+                  <div class="exp-item"><span class="exp-date">11/2022 — 07/2023</span><strong>Sr. Backend Engineer</strong> · Berijalan (Astra Group)<div class="exp-sub">Yogyakarta · Remote</div></div>
+                  <div class="exp-item"><span class="exp-date">08/2022 — 09/2023</span><strong>Software Engineer</strong> · PT. Global Urban Esensial (Dexa)<div class="exp-sub">Tangerang Selatan · Remote</div></div>
+                  <div class="exp-item"><span class="exp-date">01/2022 — 07/2022</span><strong>Mid Software Dev (NodeJS)</strong> · PT. Infosys Solusi Terpadu<div class="exp-sub">Yogyakarta · Onsite</div></div>
+                  <div class="exp-item"><span class="exp-date">2021</span><strong>Full-Stack Dev</strong> · Lapak Merangin (Self-Project)<div class="exp-sub">Jambi · Hybrid</div></div>
+                  <div class="exp-item"><span class="exp-date">2019 — 2020</span><strong>Programmer</strong> · BMKG Muaro Jambi<div class="exp-sub">Jambi · Onsite</div></div>
+                  <div class="exp-item" style="background: rgba(88,166,255,0.06); border-color: rgba(88,166,255,0.15);">
+                    <span class="exp-date">🎓 2015 — 2019</span><strong>S.T. Teknik Sipil</strong> · Universitas Jambi
+                    <div class="exp-sub">📜 C.Me — Mediator · Universitas Gadjah Mada (2024)</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -585,11 +594,14 @@ html, body, #app { width: 100%; height: 100%; overflow: hidden; font-family: 'Se
 .intro-two-col { display: flex; gap: 40px; align-items: center; }
 .intro-left { flex: 1; display: flex; flex-direction: column; align-items: center; }
 .intro-right { flex: 1.2; }
-.exp-list { display: flex; flex-direction: column; gap: 10px; }
-.exp-item { padding: 10px 14px; border-radius: 10px; background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.06); font-size: 14px; color: #c9d1d9; transition: all 0.25s; }
+.exp-list { display: flex; flex-direction: column; gap: 6px; max-height: 430px; overflow-y: auto; padding-right: 4px; }
+.exp-list::-webkit-scrollbar { width: 4px; }
+.exp-list::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 2px; }
+.exp-item { padding: 7px 12px; border-radius: 8px; background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.06); font-size: 13px; color: #c9d1d9; transition: all 0.25s; }
 .exp-item:hover { border-color: rgba(88,166,255,0.2); background: rgba(88,166,255,0.03); }
-.exp-item strong { color: #f0f6fc; }
-.exp-sub { font-size: 12px; color: #8b949e; margin-top: 3px; }
+.exp-item strong { color: #f0f6fc; font-size: 13px; }
+.exp-date { font-size: 11px; color: #58a6ff; font-weight: 600; margin-right: 6px; font-family: 'SF Mono', monospace; }
+.exp-sub { font-size: 11px; color: #8b949e; margin-top: 2px; }
 
 /* Case study (slide 5) */
 .case-study-grid { display: flex; flex-direction: column; gap: 18px; margin: 30px 0; max-width: 750px; }
