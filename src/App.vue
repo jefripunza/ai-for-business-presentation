@@ -24,9 +24,14 @@ onMounted(() => {
   }
 })
 
+const copyLabel = ref('📋 Copy Prompt!')
+
 function copyPrompt() {
   const prompt = 'Buatkan website profesional untuk bisnis saya dengan ketentuan: (1) Tampilkan profil perusahaan, layanan, portofolio, dan kontak, (2) Desain modern, responsive mobile & desktop, (3) Optimasi SEO dasar, (4) Form kontak yang berfungsi, (5) Kecepatan loading cepat. Gunakan warna dan font yang sesuai dengan brand bisnis profesional.'
-  navigator.clipboard?.writeText(prompt).then(() => alert('✅ Prompt tercopy!'))
+  navigator.clipboard?.writeText(prompt).then(() => {
+    copyLabel.value = '📋 Copied!'
+    setTimeout(() => { copyLabel.value = '📋 Copy Prompt!' }, 2000)
+  })
 }
 
 onUnmounted(() => {
@@ -297,7 +302,48 @@ function toggleFullscreen() {
           </div>
         </div>
 
-        <!-- ===== SLIDE 6: STUDI KASUS LIVE ===== -->
+        <!-- ===== SLIDE 6: SAWANG CLOUD ===== -->
+        <div class="swiper-slide slide" style="background: linear-gradient(135deg, #0a1628 0%, #0d1117 50%, #0a1628 100%);">
+          <div class="slide-content center">
+            <div class="anim-item" style="--i:0">
+              <div class="section-label">PRODUCT SHOWCASE</div>
+              <h2 class="slide-title">Perkenalkan <span class="text-gradient">Sawang Cloud</span></h2>
+            </div>
+            <div class="anim-item" style="--i:1">
+              <p class="slide-desc" style="max-width: 650px; margin: 12px auto 28px;">
+                Platform infrastruktur digital berbasis AI — tiga produk inti untuk mengakselerasi bisnis Anda.
+              </p>
+            </div>
+            <div class="sawang-grid-v2">
+              <div class="anim-item sawang-product-card" style="--i:2">
+                <div class="sp-icon">🦞</div>
+                <div class="sp-badge">AI Agent Gateway</div>
+                <h3>OpenClaw</h3>
+                <p>Bangun & deploy AI agent dari chat. Multi-channel: Telegram, WhatsApp, Discord. Self-hosted, zero telemetry.</p>
+                <a class="sp-link" href="https://openclaw.ai" target="_blank">openclaw.ai →</a>
+              </div>
+              <div class="anim-item sawang-product-card" style="--i:3">
+                <div class="sp-icon">⚡</div>
+                <div class="sp-badge">Workflow Automation</div>
+                <h3>N8N</h3>
+                <p>Otomatisasi workflow visual. Integrasikan 400+ layanan. Dari form → AI → database → notifikasi, semua otomatis.</p>
+                <a class="sp-link" href="https://n8n.io" target="_blank">n8n.io →</a>
+              </div>
+              <div class="anim-item sawang-product-card" style="--i:4">
+                <div class="sp-icon">🧠</div>
+                <div class="sp-badge">AI Model Router</div>
+                <h3>9Router</h3>
+                <p>Satu API endpoint untuk semua model AI. Auto-failover, load balancing, cost optimization. OpenAI, Claude, Gemini, Llama — satu gateway.</p>
+                <a class="sp-link" href="https://ai.jefripunza.com" target="_blank">ai.jefripunza.com →</a>
+              </div>
+            </div>
+            <div class="anim-item" style="--i:5; margin-top: 22px;">
+              <a class="cta-link" href="https://sawang.cloud" target="_blank">🌐 sawang.cloud</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== SLIDE 7: STUDI KASUS LIVE ===== -->
         <div class="swiper-slide slide" style="background: radial-gradient(ellipse at 30% 50%, #0a1628 0%, #0d1117 70%);">
           <div class="slide-content">
             <div class="anim-item" style="--i:0">
@@ -339,7 +385,7 @@ function toggleFullscreen() {
               </div>
             </div>
             <div class="anim-item" style="--i:6">
-              <button class="copy-prompt-btn" @click="copyPrompt">📋 Copy Prompt!</button>
+              <button class="copy-prompt-btn" @click="copyPrompt">{{ copyLabel }}</button>
             </div>
           </div>
         </div>
@@ -383,47 +429,6 @@ function toggleFullscreen() {
                   <li>❌ Tidak mengukur hasil sebelum & sesudah</li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ===== SLIDE 8: SAWANG CLOUD ===== -->
-        <div class="swiper-slide slide" style="background: linear-gradient(135deg, #0a1628 0%, #0d1117 50%, #0a1628 100%);">
-          <div class="slide-content center">
-            <div class="anim-item" style="--i:0">
-              <div class="section-label">PRODUCT SHOWCASE</div>
-              <h2 class="slide-title">Perkenalkan <span class="text-gradient">Sawang Cloud</span></h2>
-            </div>
-            <div class="anim-item" style="--i:1">
-              <p class="slide-desc" style="max-width: 650px; margin: 12px auto 28px;">
-                Platform infrastruktur digital berbasis AI — tiga produk inti untuk mengakselerasi bisnis Anda.
-              </p>
-            </div>
-            <div class="sawang-grid-v2">
-              <div class="anim-item sawang-product-card" style="--i:2">
-                <div class="sp-icon">🦞</div>
-                <div class="sp-badge">AI Agent Gateway</div>
-                <h3>OpenClaw</h3>
-                <p>Bangun & deploy AI agent dari chat. Multi-channel: Telegram, WhatsApp, Discord. Self-hosted, zero telemetry.</p>
-                <a class="sp-link" href="https://openclaw.ai" target="_blank">openclaw.ai →</a>
-              </div>
-              <div class="anim-item sawang-product-card" style="--i:3">
-                <div class="sp-icon">⚡</div>
-                <div class="sp-badge">Workflow Automation</div>
-                <h3>N8N</h3>
-                <p>Otomatisasi workflow visual. Integrasikan 400+ layanan. Dari form → AI → database → notifikasi, semua otomatis.</p>
-                <a class="sp-link" href="https://n8n.io" target="_blank">n8n.io →</a>
-              </div>
-              <div class="anim-item sawang-product-card" style="--i:4">
-                <div class="sp-icon">🧠</div>
-                <div class="sp-badge">AI Model Router</div>
-                <h3>9Router</h3>
-                <p>Satu API endpoint untuk semua model AI. Auto-failover, load balancing, cost optimization. OpenAI, Claude, Gemini, Llama — satu gateway.</p>
-                <a class="sp-link" href="https://ai.jefripunza.com" target="_blank">ai.jefripunza.com →</a>
-              </div>
-            </div>
-            <div class="anim-item" style="--i:5; margin-top: 22px;">
-              <a class="cta-link" href="https://sawang.cloud" target="_blank">🌐 sawang.cloud</a>
             </div>
           </div>
         </div>
