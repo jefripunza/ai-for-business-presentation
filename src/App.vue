@@ -5,7 +5,7 @@ import 'swiper/swiper-bundle.css'
 
 let swiperInstance = null
 
-const totalSlides = 9
+const totalSlides = 10
 const currentSlide = ref(0)
 const swiperEl = ref(null)
 const progressPercent = ref(0)
@@ -67,19 +67,17 @@ function toggleFullscreen() {
     <div ref="swiperEl" class="swiper">
       <div class="swiper-wrapper">
 
-        <!-- ===== SLIDE 1: TITLE (clean — no robot, no badges) ===== -->
+        <!-- ===== SLIDE 1: TITLE ===== -->
         <div class="swiper-slide slide" style="background: radial-gradient(ellipse at 50% 30%, #0a1628 0%, #0d1117 70%);">
           <div class="slide-content center hero-layout">
             <div class="anim-item" style="--i:0">
               <h1 class="hero-title">AI for Business</h1>
             </div>
             <div class="anim-item" style="--i:1">
-              <p class="hero-subtitle">Dari Bingung ke Untung</p>
+              <p class="typewriter-text">Dari Bingung ke Untung</p>
             </div>
             <div class="anim-item" style="--i:2">
-              <p class="hero-subtitle" style="font-size: 22px; color: #58a6ff; margin-top: 4px;">
-                Strategi Praktis Adopsi AI untuk Bisnis Anda
-              </p>
+              <p class="typewriter-text typewriter-line2">Strategi Praktis Adopsi AI untuk Bisnis Anda</p>
             </div>
           </div>
           <div class="particles">
@@ -101,20 +99,17 @@ function toggleFullscreen() {
         <div class="swiper-slide slide" style="background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #0d1117 100%);">
           <div class="slide-content center">
             <div class="anim-item" style="--i:0">
-              <div class="section-label">TENTANG PEMATERI</div>
-            </div>
-            <div class="anim-item" style="--i:1">
               <div class="intro-photo-wrap">
                 <img src="/jefri.jpg" alt="Jefri Herdi Triyanto" class="intro-photo" />
               </div>
             </div>
-            <div class="anim-item" style="--i:2">
+            <div class="anim-item" style="--i:1">
               <h2 class="slide-title" style="margin-top: 16px;">Jefri Herdi Triyanto, S.T., C.Me</h2>
             </div>
-            <div class="anim-item" style="--i:3">
+            <div class="anim-item" style="--i:2">
               <p style="font-size: 18px; color: #8b949e; max-width: 600px; text-align: center; line-height: 1.6;">
-                System Administrator & AI Automation Specialist<br>
-                Founder <strong style="color: #e6edf3;">Sawang Tech</strong> — membangun infrastruktur digital & AI agent untuk bisnis Indonesia.
+                Principal Engineer & AI Automation Specialist<br>
+                CEO <strong style="color: #e6edf3;">Sawang Tech</strong> — membangun infrastruktur digital & AI agent untuk bisnis Indonesia.
               </p>
             </div>
           </div>
@@ -364,37 +359,77 @@ function toggleFullscreen() {
           </div>
         </div>
 
-        <!-- ===== SLIDE 8: CLOSING ===== -->
+        <!-- ===== SLIDE 8: SAWANG CLOUD ===== -->
+        <div class="swiper-slide slide" style="background: linear-gradient(135deg, #0a1628 0%, #0d1117 50%, #0a1628 100%);">
+          <div class="slide-content center">
+            <div class="anim-item" style="--i:0">
+              <div class="section-label">PRODUCT SHOWCASE</div>
+              <h2 class="slide-title">Perkenalkan <span class="text-gradient">Sawang Cloud</span></h2>
+            </div>
+            <div class="anim-item" style="--i:1">
+              <p class="slide-desc" style="max-width: 650px; margin: 12px auto 28px;">
+                Platform infrastruktur digital berbasis AI — bikin website, deploy aplikasi,<br>kelola AI agent, semua dari satu tempat.
+              </p>
+            </div>
+            <div class="benefit-grid-v2">
+              <div class="anim-item benefit-card-v2" style="--i:2">
+                <div class="bc-icon-wrap"><span class="bc-icon">🦞</span></div>
+                <h3>Powered by OpenClaw</h3>
+                <p>AI Agent Gateway yang sudah terintegrasi. Bangun & deploy dengan instruksi chat.</p>
+              </div>
+              <div class="anim-item benefit-card-v2" style="--i:3">
+                <div class="bc-icon-wrap"><span class="bc-icon">🌐</span></div>
+                <h3>Website Instan</h3>
+                <p>Dari prompt ke website live dalam hitungan menit. Tidak perlu developer.</p>
+              </div>
+              <div class="anim-item benefit-card-v2" style="--i:4">
+                <div class="bc-icon-wrap"><span class="bc-icon">🏠</span></div>
+                <h3>Self-hosted</h3>
+                <p>Infrastruktur di server Anda sendiri. Data 100% milik Anda. Privacy first.</p>
+              </div>
+              <div class="anim-item benefit-card-v2" style="--i:5">
+                <div class="bc-icon-wrap"><span class="bc-icon">🔌</span></div>
+                <h3>Multi-channel AI</h3>
+                <p>Telegram, WhatsApp, Discord — semua terhubung ke AI agent Anda.</p>
+              </div>
+              <div class="anim-item benefit-card-v2" style="--i:6">
+                <div class="bc-icon-wrap"><span class="bc-icon">⚡</span></div>
+                <h3>Deploy Cepat</h3>
+                <p>Auto-deploy via Coolify + Cloudflare Tunnel. Setup zero-config.</p>
+              </div>
+              <div class="anim-item benefit-card-v2" style="--i:7">
+                <div class="bc-icon-wrap"><span class="bc-icon">🛠️</span></div>
+                <h3>Managed Service</h3>
+                <p>Kami kelola infrastrukturnya. Anda fokus ke bisnis. Update & maintain kami yang urus.</p>
+              </div>
+            </div>
+            <div class="anim-item" style="--i:8; margin-top: 22px;">
+              <a class="cta-link" href="https://sawang.cloud" target="_blank">🌐 sawang.cloud</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== SLIDE 9: CLOSING ===== -->
         <div class="swiper-slide slide" style="background: radial-gradient(ellipse at 50% 50%, #1a1a3e 0%, #0d1117 70%);">
           <div class="slide-content center hero-layout">
             <div class="anim-item" style="--i:0">
-              <div class="hero-emoji" style="font-size: 100px;">🦞</div>
+              <h1 class="hero-title" style="font-size: 60px;">Terima Kasih</h1>
             </div>
             <div class="anim-item" style="--i:1">
-              <h1 class="hero-title" style="font-size: 54px;">Saatnya Mulai</h1>
+              <p style="font-size: 24px; color: #8b949e; margin-top: 16px;">
+                Saatnya mulai adopsi AI untuk bisnis Anda.
+              </p>
             </div>
             <div class="anim-item" style="--i:2">
-              <p style="font-size: 24px; color: #8b949e; margin-top: 12px;">
-                Bukan soal teknologi canggih.<br>
-                <strong style="color: #f0f6fc;">Tapi soal bisnis yang bertahan.</strong>
+              <p class="closing-text" style="margin-top: 32px; font-size: 26px; color: #58a6ff; font-weight: 700;">
+                Q&A / Diskusi 🎤
               </p>
             </div>
             <div class="anim-item" style="--i:3">
-              <div style="display: flex; gap: 14px; margin-top: 32px; flex-wrap: wrap; justify-content: center;">
-                <a class="cta-link" href="https://openclaw.ai" target="_blank">
-                  🌐 openclaw.ai
-                </a>
-                <a class="cta-link" href="https://github.com/openclaw/openclaw" target="_blank">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                  GitHub
-                </a>
+              <div style="margin-top: 36px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center;">
+                <a class="cta-link" href="https://sawang.cloud" target="_blank">🌐 sawang.cloud</a>
+                <span class="cta-link" style="cursor: default;">🦞 powered by OpenClaw</span>
               </div>
-            </div>
-            <div class="anim-item" style="--i:4">
-              <p class="closing-text" style="margin-top: 24px;">Q&A / Diskusi</p>
-            </div>
-            <div class="anim-item" style="--i:5">
-              <p class="closing-quote">"The best time to start was yesterday. The next best time is now."</p>
             </div>
           </div>
         </div>
@@ -490,7 +525,7 @@ html, body, #app { width: 100%; height: 100%; overflow: hidden; font-family: 'Se
 .pain-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin: 28px 0; }
 .pain-card { display: flex; gap: 16px; padding: 22px 24px; border-radius: 14px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); transition: all 0.3s; }
 .pain-card:hover { border-color: rgba(88,166,255,0.25); transform: translateX(4px); }
-.pain-num { font-size: 36px; font-weight: 800; background: linear-gradient(135deg, #58a6ff, #d2a8ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; min-width: 40px; line-height: 1; }
+.pain-num { font-size: 36px; font-weight: 800; background: linear-gradient(135deg, #58a6ff, #d2a8ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; min-width: 52px; line-height: 1; padding-right: 4px; flex-shrink: 0; }
 .pain-body h4 { font-size: 17px; font-weight: 700; color: #f0f6fc; margin-bottom: 6px; }
 .pain-body p { font-size: 14px; color: #8b949e; line-height: 1.5; }
 .engage-text { text-align: center; font-size: 20px; color: #58a6ff; margin-top: 8px; font-weight: 600; }
@@ -554,6 +589,35 @@ html, body, #app { width: 100%; height: 100%; overflow: hidden; font-family: 'Se
 .cta-link:hover { background: rgba(88,166,255,0.12); border-color: rgba(88,166,255,0.4); transform: scale(1.03); }
 .closing-text { font-size: 17px; color: #8b949e; }
 .closing-quote { font-size: 15px; color: #484f58; margin-top: 16px; font-style: italic; }
+
+/* Typewriter effect for slide 1 subtitles */
+.typewriter-text {
+  font-size: clamp(18px, 3vw, 28px);
+  color: #8b949e;
+  margin-top: 8px;
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'JetBrains Mono', monospace;
+  font-weight: 400;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #58a6ff;
+  animation: typewriter 2s steps(30, end), blink 0.8s step-end infinite;
+  max-width: 100%;
+}
+.typewriter-line2 {
+  font-size: clamp(16px, 2.5vw, 22px);
+  color: #58a6ff;
+  margin-top: 0;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blink {
+  50% { border-color: transparent; }
+}
 
 /* Nav bar */
 .nav-bar { position: fixed; bottom: 0; left: 0; right: 0; height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; z-index: 100; background: linear-gradient(transparent, rgba(13,17,23,0.95) 40%); pointer-events: none; }
