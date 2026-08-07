@@ -87,7 +87,7 @@ function toggleFullscreen() {
       <div class="swiper-wrapper">
 
         <!-- ===== SLIDE 1: TITLE ===== -->
-        <div class="swiper-slide slide" style="background: radial-gradient(ellipse at 50% 30%, #0a1628 0%, #0d1117 70%);">
+        <div class="swiper-slide slide slide-center" style="background: radial-gradient(ellipse at 50% 30%, #0a1628 0%, #0d1117 70%);">
           <div class="slide-content center hero-layout">
             <div class="anim-item" style="--i:0">
               <h1 class="hero-title">AI for Business</h1>
@@ -443,13 +443,13 @@ function toggleFullscreen() {
         </div>
 
         <!-- ===== SLIDE 9: CLOSING ===== -->
-        <div class="swiper-slide slide" style="background: radial-gradient(ellipse at 50% 50%, #1a1a3e 0%, #0d1117 70%);">
+        <div class="swiper-slide slide slide-center" style="background: radial-gradient(ellipse at 50% 50%, #1a1a3e 0%, #0d1117 70%);">
           <div class="slide-content center hero-layout">
             <div class="anim-item" style="--i:0">
-              <h1 class="hero-title" style="font-size: 60px;">Terima Kasih</h1>
+              <h1 class="hero-title" style="font-size: clamp(36px, 8vw, 60px);">Terima Kasih</h1>
             </div>
             <div class="anim-item" style="--i:1">
-              <p style="font-size: 24px; color: #8b949e; margin-top: 16px;">
+              <p style="font-size: clamp(16px, 3vw, 24px); color: #8b949e; margin-top: 16px;">
                 Saatnya mulai adopsi AI untuk bisnis Anda.
               </p>
             </div>
@@ -761,11 +761,15 @@ html, body, #app { width: 100%; height: 100%; overflow: hidden; font-family: 'Se
 }
 
 @media (max-width: 640px) {
-  .swiper-slide { overflow-y: auto; align-items: flex-start; -webkit-overflow-scrolling: touch; }
+  .swiper-slide { overflow-y: auto; -webkit-overflow-scrolling: touch; }
+  .swiper-slide.slide-center { align-items: center; justify-content: center; }
   .slide-content { padding: 24px 16px 80px; }
-  .hero-layout { max-width: 100%; }
+  .hero-layout { max-width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; min-height: 100%; }
+  .hero-layout .swiper-slide { align-items: center; justify-content: center; }
+  .typewriter-text { white-space: normal !important; word-break: break-word; text-align: center; }
+  .typewriter-line2 { white-space: normal !important; text-align: center; }
   .hero-emoji { font-size: 60px; margin-bottom: 0; }
-  .hero-title { font-size: 28px; }
+  .hero-title { font-size: clamp(28px, 8vw, 40px); }
   .hero-subtitle { font-size: 16px; margin-top: 6px; }
   .hero-tags { flex-direction: column; align-items: center; gap: 6px; margin-top: 18px; }
   .slide-title { font-size: 22px; margin-bottom: 10px; }
