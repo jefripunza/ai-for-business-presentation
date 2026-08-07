@@ -353,7 +353,7 @@ function toggleFullscreen() {
         </div>
 
         <!-- ===== SLIDE 8: SAWANG CLOUD ===== -->
-        <div class="swiper-slide slide" style="background: linear-gradient(135deg, #0a1628 0%, #0d1117 50%, #0a1628 100%);">
+        <div class="swiper-slide slide slide-sawang-cloud" style="background: linear-gradient(135deg, #0a1628 0%, #0d1117 50%, #0a1628 100%);">
           <div class="slide-content center">
             <div class="anim-item" style="--i:0">
               <div class="section-label">PRODUCT SHOWCASE</div>
