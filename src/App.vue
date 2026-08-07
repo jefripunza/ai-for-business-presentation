@@ -91,7 +91,7 @@ function toggleFullscreen() {
               <p :class="['typewriter-text', { 'typewriter-done': typeState !== 'line1' }]">Dari Bingung ke Untung</p>
             </div>
             <div class="anim-item" style="--i:2">
-              <p :class="['typewriter-text', 'typewriter-line2', { 'typewriter-active': typeState === 'line2' }]">Strategi Praktis Adopsi AI untuk Bisnis Anda</p>
+              <p :class="['typewriter-text', 'typewriter-line2', { 'typewriter-active': typeState === 'line2', 'typewriter-done': typeState === 'done' }]">Strategi Praktis Adopsi AI untuk Bisnis Anda</p>
             </div>
           </div>
           <div class="particles">
@@ -682,6 +682,12 @@ html, body, #app { width: 100%; height: 100%; overflow: hidden; font-family: 'Se
   width: auto;
   border-right-color: #58a6ff;
   animation: typewriter 2.5s steps(32, end) forwards, blink 0.8s steps(1, end) infinite;
+}
+/* After typewriter completes: keep text visible + cursor blinking */
+.typewriter-line2.typewriter-done {
+  width: auto;
+  border-right-color: #58a6ff;
+  animation: blink 0.8s steps(1, end) infinite;
 }
 @keyframes typewriter {
   from { width: 0; }
