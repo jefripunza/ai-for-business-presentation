@@ -5,7 +5,7 @@ import 'swiper/swiper-bundle.css'
 
 let swiperInstance = null
 
-const totalSlides = 8
+const totalSlides = 9
 const currentSlide = ref(0)
 const swiperEl = ref(null)
 const progressPercent = ref(0)
@@ -67,29 +67,19 @@ function toggleFullscreen() {
     <div ref="swiperEl" class="swiper">
       <div class="swiper-wrapper">
 
-        <!-- ===== SLIDE 1: TITLE ===== -->
+        <!-- ===== SLIDE 1: TITLE (clean — no robot, no badges) ===== -->
         <div class="swiper-slide slide" style="background: radial-gradient(ellipse at 50% 30%, #0a1628 0%, #0d1117 70%);">
           <div class="slide-content center hero-layout">
             <div class="anim-item" style="--i:0">
-              <div class="hero-emoji">🤖</div>
-            </div>
-            <div class="anim-item" style="--i:1">
               <h1 class="hero-title">AI for Business</h1>
             </div>
-            <div class="anim-item" style="--i:2">
+            <div class="anim-item" style="--i:1">
               <p class="hero-subtitle">Dari Bingung ke Untung</p>
             </div>
-            <div class="anim-item" style="--i:3">
+            <div class="anim-item" style="--i:2">
               <p class="hero-subtitle" style="font-size: 22px; color: #58a6ff; margin-top: 4px;">
                 Strategi Praktis Adopsi AI untuk Bisnis Anda
               </p>
-            </div>
-            <div class="anim-item" style="--i:4">
-              <div class="hero-tags">
-                <span class="hero-tag">📊 Bisnis</span>
-                <span class="hero-tag">⚡ Praktis</span>
-                <span class="hero-tag">🚀 Actionable</span>
-              </div>
             </div>
           </div>
           <div class="particles">
@@ -107,7 +97,30 @@ function toggleFullscreen() {
           </div>
         </div>
 
-        <!-- ===== SLIDE 2: KENAPA AI BUKAN PILIHAN ===== -->
+        <!-- ===== SLIDE 2: PERKENALAN ===== -->
+        <div class="swiper-slide slide" style="background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #0d1117 100%);">
+          <div class="slide-content center">
+            <div class="anim-item" style="--i:0">
+              <div class="section-label">TENTANG PEMATERI</div>
+            </div>
+            <div class="anim-item" style="--i:1">
+              <div class="intro-photo-wrap">
+                <img src="/jefri.jpg" alt="Jefri Herdi Triyanto" class="intro-photo" />
+              </div>
+            </div>
+            <div class="anim-item" style="--i:2">
+              <h2 class="slide-title" style="margin-top: 16px;">Jefri Herdi Triyanto, S.T., C.Me</h2>
+            </div>
+            <div class="anim-item" style="--i:3">
+              <p style="font-size: 18px; color: #8b949e; max-width: 600px; text-align: center; line-height: 1.6;">
+                System Administrator & AI Automation Specialist<br>
+                Founder <strong style="color: #e6edf3;">Sawang Tech</strong> — membangun infrastruktur digital & AI agent untuk bisnis Indonesia.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== SLIDE 3: KENAPA AI BUKAN PILIHAN ===== -->
         <div class="swiper-slide slide" style="background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #0d1117 100%);">
           <div class="slide-content">
             <div class="anim-item" style="--i:0">
@@ -493,6 +506,22 @@ html, body, #app { width: 100%; height: 100%; overflow: hidden; font-family: 'Se
 .flow-arrow { font-size: 32px; color: #484f58; padding: 18px 6px; }
 .principle-box { display: flex; gap: 14px; align-items: flex-start; padding: 18px 24px; border-radius: 14px; background: rgba(88,166,255,0.05); border: 1px solid rgba(88,166,255,0.15); font-size: 16px; color: #c9d1d9; line-height: 1.5; max-width: 700px; }
 .principle-icon { font-size: 28px; flex-shrink: 0; }
+
+/* Intro / Perkenalan */
+.intro-photo-wrap {
+  width: clamp(160px, 28vw, 240px);
+  height: clamp(160px, 28vw, 240px);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(88,166,255,0.3);
+  box-shadow: 0 0 40px rgba(88,166,255,0.15);
+  margin: 12px auto;
+}
+.intro-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /* Case study (slide 5) */
 .case-study-grid { display: flex; flex-direction: column; gap: 18px; margin: 30px 0; max-width: 750px; }
