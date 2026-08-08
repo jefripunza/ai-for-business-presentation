@@ -27,7 +27,15 @@ onMounted(() => {
 const copyLabel = ref('📋 Copy Prompt!')
 
 function copyPrompt() {
-  const prompt = 'Buatkan website profesional untuk bisnis saya dengan ketentuan: (1) Tampilkan profil perusahaan, layanan, portofolio, dan kontak, (2) Desain modern, responsive mobile & desktop, (3) Optimasi SEO dasar, (4) Form kontak yang berfungsi, (5) Kecepatan loading cepat. Gunakan warna dan font yang sesuai dengan brand bisnis profesional.'
+  const prompt = `Buatkan website profesional untuk bisnis saya dengan ketentuan:
+
+1. Tampilkan profil perusahaan, layanan, portofolio, dan kontak
+2. Desain modern, responsive mobile & desktop
+3. Optimasi SEO dasar
+4. Form kontak yang berfungsi
+5. Kecepatan loading cepat
+
+Gunakan warna dan font yang sesuai dengan brand bisnis profesional.`
   navigator.clipboard?.writeText(prompt).then(() => {
     copyLabel.value = '📋 Copied!'
     setTimeout(() => { copyLabel.value = '📋 Copy Prompt!' }, 2000)
